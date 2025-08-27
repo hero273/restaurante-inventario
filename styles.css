@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente un poco más suave */
+    /* Fondo con una imagen de cocina, pero desenfocada */
+    background-image: url('Wayas-fondo.jpg'); /* Puedes cambiar esta URL por la tuya */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Para evitar scroll si hay algo fuera */
+}
+
+/* Contenedor principal con el efecto de "vidrio" */
+.login-container {
+    backdrop-filter: blur(5px); /* Efecto de desenfoque del fondo */
+    background-color: rgba(0, 0, 0, 0.3); /* Overlay oscuro para que el contenido resalte */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* La caja central del login */
+.login-box {
+    background: rgba(255, 255, 255, 0.85); /* Fondo blanco semitransparente */
+    padding: 30px; /* Un poco menos de padding para un look más compacto */
+    border-radius: 15px; /* Bordes más redondeados */
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15); /* Sombra más pronunciada */
+    text-align: center;
+    width: 380px; /* Ancho fijo */
+    max-width: 90%; /* Para que sea responsive en pantallas pequeñas */
+    box-sizing: border-box; /* Incluir padding en el ancho */
+}
+
+/* Estilo para la sección superior con logo y título "Gestión de contabilidad" */
+.header-login-box {
+    background-color: #f0f0f0; /* Un gris claro para el fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px 20px; /* Padding interno */
+    margin-bottom: 25px; /* Espacio debajo */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar contenido */
+    gap: 15px; /* Espacio entre el logo y el texto */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo-image {
+    width: 45px; /* Tamaño del logo */
+    height: 45px;
+    border-radius: 8px; /* Si tu logo es cuadrado, esto lo hace redondeado */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien */
+}
+
+.app-title {
+    font-size: 1.1em; /* Tamaño del texto "Gestión de contabilidad" */
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Título "Inicio de Sesión" */
+h2 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 1.8em; /* Un poco más grande */
+    font-weight: 600;
+}
+
+/* Grupos de entrada (label + input) */
+.input-group {
+    text-align: left;
+    margin-bottom: 25px; /* Más espacio entre campos */
+    position: relative; /* Para posicionar el icono de limpiar */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: normal; /* Menos negrita que antes */
+    font-size: 0.9em;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px; /* Más padding para que se vea más grande */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Bordes redondeados para inputs */
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+input::placeholder {
+    color: #aaa; /* Color del placeholder */
+}
+
+input:focus {
+    border-color: #007bff; /* Borde azul al enfocar */
+    outline: none; /* Quitar el contorno por defecto del navegador */
+}
+
+/* Icono de limpiar/cerrar si lo quieres simular */
+.icon-clear {
+    position: absolute;
+    right: 15px;
+    top: 60%; /* Ajusta la posición vertical */
+    transform: translateY(-50%);
+    color: #bbb;
+    cursor: pointer;
+    font-size: 0.9em;
+    display: none; /* Oculto por defecto, se podría mostrar con JS */
+}
+
+/* Estilo para "¿Olvidó su contraseña?" */
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 0.85em;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: -15px; /* Ajustar posición */
+    margin-bottom: 25px; /* Espacio antes del botón */
+    transition: color 0.3s;
+}
+
+.forgot-password:hover {
+    color: #0056b3;
+}
+
+/* Botón de iniciar sesión */
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #4a90e2; /* Un azul más suave y agradable */
+    color: white;
+    border-radius: 8px; /* Bordes redondeados para el botón */
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #357bd8; /* Un poco más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Pequeño efecto de levantamiento */
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Recetas - Wayas Inventario</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="nav-left">
+            <a href="dashboard.html" class="nav-item">🏠 Menu Principal</a>
+            <a href="#" class="nav-item">👤 Persona</a>
+            <a href="#" class="nav-item">🛒 POS</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="active">📖 Recetas</a>
+                <div class="dropdown-content">
+                    <a href="recetas.html">Gestión de Recetas</a>
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#">📦 Almacen</a>
+                <div class="dropdown-content">
+                    <a href="almacen.html">Lista Productos - Insumos</a>
+                    <a href="#">Kardex de Productos - Insumos</a>
+                </div>
+            </div>
+            <a href="#" class="nav-item">💲 Caja</a>
+            <a href="#" class="nav-item">🧾 Contabilidad</a>
+            <a href="#" class="nav-item">📊 Reportes</a>
+        </div>
+        <div class="nav-right">
+            <a href="index.html" class="nav-item">Cerrar Sesión</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="content-header">
+            <h1>Gestión de Recetas</h1>
+            <button id="btnNuevaReceta" class="btn btn-primary">➕ Nueva Receta</button>
+        </div>
+
+        <div class="recipe-grid">
+            <div class="recipe-card" data-title="Lomo Saltado">
+                <h3>Lomo Saltado</h3>
+                <p>Clásico plato peruano con tiras de lomo fino salteado, cebolla, tomate y ají amarillo, acompañado de papas fritas y arroz.</p>
+                <div class="card-actions">
+                    <button class="btn-icon btn-edit">✏️</button>
+                    <button class="btn-icon">🗑️</button>
+                </div>
+            </div>
+            <div class="recipe-card" data-title="Ceviche Clásico">
+                <h3>Ceviche Clásico</h3>
+                <p>Fresca corvina marinada en jugo de limón, ají limo, cebolla roja, culantro, acompañado de camote y choclo.</p>
+                <div class="card-actions">
+                    <button class="btn-icon btn-edit">✏️</button>
+                    <button class="btn-icon">🗑️</button>
+                </div>
+            </div>
+            <div class="recipe-card" data-title="Ají de Gallina">
+                <h3>Ají de Gallina</h3>
+                <p>Crema espesa y ligeramente picante de gallina deshilachada con ají amarillo, queso y leche, servido con arroz y papa.</p>
+                <div class="card-actions">
+                    <button class="btn-icon btn-edit">✏️</button>
+                    <button class="btn-icon">🗑️</button>
+                </div>
+            </div>
+            <div class="recipe-card" data-title="Arroz con Pollo">
+                <h3>Arroz con Pollo</h3>
+                <p>Jugoso arroz verde cocinado con trozos de pollo, arvejas, zanahoria y culantro, lleno de sabor criollo.</p>
+                <div class="card-actions">
+                    <button class="btn-icon btn-edit">✏️</button>
+                    <button class="btn-icon">🗑️</button>
+                </div>
+            </div>
+            <div class="recipe-card" data-title="Papa a la Huancaína">
+                <h3>Papa a la Huancaína</h3>
+                <p>Rodajas de papa amarilla cocida bañadas en una cremosa salsa de ají amarillo, queso fresco y leche, decorado con huevo.</p>
+                <div class="card-actions">
+                    <button class="btn-icon btn-edit">✏️</button>
+                    <button class="btn-icon">🗑️</button>
+                </div>
+            </div>
+            <div class="recipe-card" data-title="Seco de Res con Frejoles">
+                <h3>Seco de Res con Frejoles</h3>
+                <p>Tiernos trozos de res cocidos lentamente en salsa de culantro y cerveza, acompañado de frejoles canarios y arroz blanco.</p>
+                <div class="card-actions">
+                    <button class="btn-icon btn-edit">✏️</button>
+                    <button class="btn-icon">🗑️</button>
+                </div>
+            </div>
+            <div class="recipe-card" data-title="Causa Rellena de Pollo">
+                <h3>Causa Rellena de Pollo</h3>
+                <p>Puré de papa amarilla sazonado con limón y ají amarillo, relleno de una fresca ensalada de pollo y mayonesa.</p>
+                <div class="card-actions">
+                    <button class="btn-icon btn-edit">✏️</button>
+                    <button class="btn-icon">🗑️</button>
+                </div>
+            </div>
+            <div class="recipe-card" data-title="Tallarines Verdes con Bistec">
+                <h3>Tallarines Verdes con Bistec</h3>
+                <p>Fideos bañados en una salsa pesto peruana a base de espinaca, albahaca y queso, servido con un jugoso bistec.</p>
+                <div class="card-actions">
+                    <button class="btn-icon btn-edit">✏️</button>
+                    <button class="btn-icon">🗑️</button>
+                </div>
+            </div>
+            <div class="recipe-card" data-title="Anticuchos de Corazón">
+                <h3>Anticuchos de Corazón</h3>
+                <p>Brochetas de tierno corazón de res marinado y asado, acompañado de papa dorada y choclo.</p>
+                <div class="card-actions">
+                    <button class="btn-icon btn-edit">✏️</button>
+                    <button class="btn-icon">🗑️</button>
+                </div>
+            </div>
+            <div class="recipe-card" data-title="Chicha Morada (Bebida)">
+                <h3>Chicha Morada (Bebida)</h3>
+                <p>Refrescante bebida tradicional a base de maíz morado, piña, manzana, canela y clavo, endulzada al gusto.</p>
+                <div class="card-actions">
+                    <button class="btn-icon btn-edit">✏️</button>
+                    <button class="btn-icon">🗑️</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="modal-receta-container" class="modal-container">
+        <div class="modal-content modal-lg">
+            <div class="modal-header">
+                <h2 id="modal-receta-title">Nueva Receta</h2>
+                <span id="close-receta-modal" class="close-btn">&times;</span>
+            </div>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label for="nombre-receta">NOMBRE DE LA RECETA</label>
+                    <input type="text" id="nombre-receta" placeholder="Ej: Lomo Saltado">
+                </div>
+
+                <div class="ingredient-section">
+                    <h4>Ingredientes</h4>
+                    <div class="ingredient-adder">
+                        <select id="insumo-select">
+                            <option value="">-- Seleccionar Insumo --</option>
+                            <option value="101">LOMO FINO DE RES</option>
+                            <option value="102">PECHUGA DE POLLO</option>
+                            <option value="103">PESCADO CORVINA FRESCO</option>
+                            <option value="201">CEBOLLA ROJA</option>
+                            <option value="202">TOMATE ITALIANO</option>
+                            <option value="203">LIMÓN (PARA CEVICHE)</option>
+                            <option value="204">AJÍ AMARILLO FRESCO</option>
+                            <option value="205">CULANTRO (ATADO)</option>
+                            <option value="206">AJO MOLIDO</option>
+                            <option value="301">PAPA AMARILLA</option>
+                            <option value="302">PAPA BLANCA (PARA FRITURA)</option>
+                            <option value="303">CAMOTE MORADO</option>
+                            <option value="401">ARROZ EXTRA</option>
+                            <option value="402">ACEITE VEGETAL</option>
+                            <option value="403">LECHE EVAPORADA (LATA)</option>
+                            <option value="404">QUESO FRESCO SERRANO</option>
+                            <option value="405">FREJOL CANARIO</option>
+                            <option value="501">INCA KOLA 1.5L</option>
+                            <option value="502">CERVEZA CUSQUEÑA (BOTELLA)</option>
+                            <option value="503">PISCO QUEBRANTA</option>
+                            <option value="504">CHICHA MORADA (MAÍZ)</option>
+                        </select>
+                        <input type="number" placeholder="Cantidad">
+                        <input type="text" value="gr." readonly>
+                        <button type="button" class="btn btn-secondary">Agregar</button>
+                    </div>
+                    <ul class="ingredient-list">
+                        </ul>
+                </div>
+
+                <div class="form-group">
+                    <label for="pasos-receta">PASOS DE PREPARACIÓN</label>
+                    <textarea id="pasos-receta" rows="6" placeholder="1. Cortar la carne en tiras..."></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" id="btnSalirReceta" class="btn btn-secondary">Salir</button>
+                    <button type="submit" class="btn btn-primary">Guardar Receta</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const modalReceta = document.getElementById('modal-receta-container');
+        const modalTitle = document.getElementById('modal-receta-title');
+        const inputNombreReceta = document.getElementById('nombre-receta');
+        const btnNuevaReceta = document.getElementById('btnNuevaReceta');
+        const closeRecetaModal = document.getElementById('close-receta-modal');
+        const btnSalirReceta = document.getElementById('btnSalirReceta');
+        const botonesEditar = document.querySelectorAll('.btn-edit');
+
+        const showModal = () => { modalReceta.style.display = 'flex'; };
+        const hideModal = () => { modalReceta.style.display = 'none'; };
+
+        btnNuevaReceta.addEventListener('click', () => {
+            modalTitle.textContent = 'Nueva Receta';
+            inputNombreReceta.value = '';
+            showModal();
+        });
+
+        closeRecetaModal.addEventListener('click', hideModal);
+        btnSalirReceta.addEventListener('click', hideModal);
+        window.addEventListener('click', (event) => {
+            if (event.target == modalReceta) {
+                hideModal();
+            }
+        });
+
+        botonesEditar.forEach(button => {
+            button.addEventListener('click', () => {
+                const recipeCard = button.closest('.recipe-card');
+                const title = recipeCard.dataset.title;
+                
+                modalTitle.textContent = 'Editar Receta';
+                inputNombreReceta.value = title;
+                
+                showModal();
+            });
+        });
+    </script>
+
+</body>
+</html>

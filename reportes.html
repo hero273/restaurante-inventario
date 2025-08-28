@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes - Wayas Inventario</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="nav-left">
+            <a href="dashboard.html" class="nav-item">🏠 Menu Principal</a>
+            <div class="nav-item dropdown">
+                <a href="#">👤 Persona</a>
+                <div class="dropdown-content">
+                    <a href="proveedores.html">Gestión de Proveedores</a>
+                </div>
+            </div>
+            <a href="#" class="nav-item">🛒 POS</a>
+            <div class="nav-item dropdown">
+                <a href="#">📖 Recetas</a>
+                <div class="dropdown-content">
+                    <a href="recetas.html">Gestión de Recetas</a>
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#">📦 Almacen</a>
+                <div class="dropdown-content">
+                    <a href="almacen.html">Lista Productos - Insumos</a>
+                    <a href="#">Kardex de Productos - Insumos</a>
+                </div>
+            </div>
+            <a href="#" class="nav-item">💲 Caja</a>
+            <a href="#" class="nav-item">🧾 Contabilidad</a>
+            <a href="reportes.html" class="nav-item active">📊 Reportes</a>
+        </div>
+        <div class="nav-right">
+            <a href="index.html" class="nav-item">Cerrar Sesión</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="content-header">
+            <h1>Central de Reportes</h1>
+        </div>
+
+        <div class="report-grid">
+            <div class="report-card">
+                <h3>Stock Valorizado</h3>
+                <p>Valor total de tu inventario basado en el precio de compra.</p>
+                <div class="report-value">S/ 1,850.75</div>
+                <button class="btn btn-secondary">Ver Detalle</button>
+            </div>
+
+            <div class="report-card">
+                <h3>Insumos Bajo Mínimo</h3>
+                <p>Insumos que necesitan ser reabastecidos urgentemente.</p>
+                <div class="report-value alert">3 Insumos</div>
+                <button class="btn btn-secondary">Ver Lista</button>
+            </div>
+
+            <div class="report-card">
+                <h3>Rendimiento de Proveedores</h3>
+                <p>Evaluación de puntualidad y calidad de tus proveedores.</p>
+                <div class="report-value">Verduras Frescas "El Campo" (Top)</div>
+                <button class="btn btn-secondary">Ver Comparativa</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
